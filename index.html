@@ -30,7 +30,7 @@
 		<div class="row">
 			<div class="col-sm-12 col-md-3">
 				<h1>
-					<a href="#home"><img src="https://via.placeholder.com/122x163" alt="Endless Summer"></a>
+					<a href="#home"><img src="img/es_logo_white.svg" alt="Endless Summer" id="hero-logo"></a>
 				</h1>
 			</div>
 			<div class="col-sm-12 col-md-8 col-lg-6">
@@ -44,20 +44,25 @@
 	<div class="bg-blue">
 		<div class="wrapper">
 			<header class="row">
-				<h2>Services</h2>
-				<img src="https://via.placeholder.com/166x450" alt="" class="col-sm-5 col-md-4 col-lg-5">
-				<div class="col-sm-7 col-md-6 col-lg-5">
+				<div id="services-h2">
+					<h2>Services</h2>
+				</div>
+				<div id="services-photo" class="col-sm-5 col-md-4 col-lg-5"></div>
+				<div class="col-sm-7 col-md-5 col-lg-4">
 					<p>Our lessons are specifically designed to teach you to surf at your own pace in a relaxed environment to build further self-confidence so you can continue in the sport of surfing and feel confident in the water.</p>
 					<p>With each lesson we cover Ocean safety. This ensures that at the end of your experience you have knowledge to know where is a safe area to surf or swim for the future.</p>
-					<div>
-						<img src="https://via.placeholder.com/38" alt="">
-						<div>
-							<p>You will also receive Half price dinner voucher and complimentary drink at a local restaurant with each lesson.</p>
-						</div>
-					</div>
 				</div>
 			</header>
-
+			
+			<div class="row" id="voucher-widget">
+				<div class="col-sm-2">
+					<img src="https://via.placeholder.com/38" alt="">
+				</div>
+				<div class="col-sm-6 col-md-5">
+					<p>You will also receive Half price dinner voucher and complimentary drink at a local restaurant with each lesson.</p>
+				</div>
+			</div>
+			
 			<!-- Tab links -->
 			<div class="tab">
 				<button class="tablinks" onclick="openCity(event, 'half-day')">1/2 Day</button>|
@@ -276,62 +281,135 @@
 </section>
 
 
+<div id="about-us">
+<!-- Slider Gallery -->
+	<div id="slider">
+		<input checked type="radio" name="slider" id="slide1" class="slider-input"/>
+		<input type="radio" name="slider" id="slide2" class="slider-input"/>
+		<input type="radio" name="slider" id="slide3" class="slider-input"/>
+		<input type="radio" name="slider" id="slide4" class="slider-input"/>
+		<input type="radio" name="slider" id="slide5" class="slider-input"/>
+
+		<div class="slider-wrapper">
+		<div class="inner">
+
+			<article>
+				<!--
+				<div class="info top-left">
+				<h3>Malacca</h3></div>-->
+				<img src="img/es_gallery_01.jpg" alt=""/>
+			</article>
+
+			<article>
+				<!--
+				<div class="info bottom-right">
+				<h3>Cameron Highland</h3></div>-->
+				<img src="img/es_gallery_02.jpg" alt=""/>
+			</article>
+
+			<article>
+				<!--
+				<div class="info bottom-left">
+				<h3>New Delhi</h3></div>-->
+				<img src="img/es_gallery_03.jpg" alt=""/>
+			</article>
+
+			<article>
+				<!--
+				<div class="info top-right">
+				<h3>Ladakh</h3></div>-->
+				<img src="img/es_gallery_01.jpg" alt=""/>
+			</article>
+
+			<article>
+				<!--
+				<div class="info bottom-left">
+				<h3>Nubra Valley</h3></div>-->
+				<img src="img/es_gallery_02.jpg" alt=""/>
+			</article>
+		</div>
+    <!-- .inner -->
 	
-<section id="about-us" class="wrapper row">
-	<header>
-		<h2>About Us</h2>
-	</header>
-	<div class="row col-sm-9 col-md-6 col-lg-5">
-		<div>
-			<img src="https://via.placeholder.com/36" alt="" class="col-sm-2">
-			<div class="col-sm-10">
-				<p>As a mobile surf school we are dedicated to finding the best, fun and safest waves daily.</p>
-			</div>
-		</div>
-		<div>
-			<img src="https://via.placeholder.com/36" alt="" class="col-sm-2">
-			<div class="col-sm-10">
-				<p>We have over 10 different locations at our fingertips, ready for the ultimate learn to surf experience.</p>
-			</div>
-		</div>
-		<div>
-			<img src="https://via.placeholder.com/36" alt="" class="col-sm-2">
-			<div class="col-sm-10">
-				<p>Our beaches are the best in New Zealand, you will learn in waist deep water with easy to ride small waves.</p>
-			</div>
-		</div>
-		<div>
-			<img src="https://via.placeholder.com/36" alt="" class="col-sm-2">
-			<div class="col-sm-10">
-				<p>We are the only Manu Bay surf school to have surf school permits to teach personal private lessons and group lessons in both Manu and Whale Bay.</p>
-			</div>
-		</div>
-		<div>
-			<img src="https://via.placeholder.com/36" alt="" class="col-sm-2">
-			<div class="col-sm-10">
-				<p>Endless Summer Surf School offers programs to complete beginners, intermediate and advanced surfers of any age.</p>
-			</div>
-		</div>
 	</div>
-</section>
+  <!-- .slider-wrapper -->
+
+	  <div class="slider-prev-next-control">
+		<label for="slide1"></label>
+		<label for="slide2"></label>
+		<label for="slide3"></label>
+		<label for="slide4"></label>
+		<label for="slide5"></label>
+	  </div>
+  <!-- .slider-prev-next-control -->
+
+	<!--
+  <div class="slider-dot-control">
+    <label for="slide1"></label>
+    <label for="slide2"></label>
+    <label for="slide3"></label>
+    <label for="slide4"></label>
+    <label for="slide5"></label>
+  </div>
+	--!>
+  <!-- .slider-dot-control -->
+	</div>
+	
+	<section class="wrapper row">
+		<header>
+			<h2>About Us</h2>
+		</header>
+		<div class="row col-sm-9 col-md-6 col-lg-5">
+			<div>
+				<img src="https://via.placeholder.com/36" alt="" class="col-sm-2">
+				<div class="col-sm-10">
+					<p>As a mobile surf school we are dedicated to finding the best, fun and safest waves daily.</p>
+				</div>
+			</div>
+			<div>
+				<img src="https://via.placeholder.com/36" alt="" class="col-sm-2">
+				<div class="col-sm-10">
+					<p>We have over 10 different locations at our fingertips, ready for the ultimate learn to surf experience.</p>
+				</div>
+			</div>
+			<div>
+				<img src="https://via.placeholder.com/36" alt="" class="col-sm-2">
+				<div class="col-sm-10">
+					<p>Our beaches are the best in New Zealand, you will learn in waist deep water with easy to ride small waves.</p>
+				</div>
+			</div>
+			<div>
+				<img src="https://via.placeholder.com/36" alt="" class="col-sm-2">
+				<div class="col-sm-10">
+					<p>We are the only Manu Bay surf school to have surf school permits to teach personal private lessons and group lessons in both Manu and Whale Bay.</p>
+				</div>
+			</div>
+			<div>
+				<img src="https://via.placeholder.com/36" alt="" class="col-sm-2">
+				<div class="col-sm-10">
+					<p>Endless Summer Surf School offers programs to complete beginners, intermediate and advanced surfers of any age.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
 	
 <section id="monthly-newsletter" class="wrapper row">
-	
 		<div class="col-sm-12 col-md-6 col-lg-5">
 			<header>
 				<h2>Monthly Newsletter</h2>
 			</header>
 			<form>
-					<div style="col-sm-8">
-						<label for ="newsletter">newsletter</label>
+				<div class="row">
+					<div class="col-sm-8 col-md-12">
+						<label for="newsletter">newsletter</label>
 						<input type="text" name="newsletter" id="newsletter" placeholder="Enter email address to subscribe">
 					</div>
 					<div class="col-sm-4">
 						<p><a href="#">Submit</a></p>
 					</div>
+				</div>
 			</form>
 		</div>
-	
 </section>
 	
 <section id="our-team">
@@ -377,25 +455,24 @@
 			<h2>Contact Us</h2>
 		</header>
 		<form>
-			<formfield>
-				<input type="text" name="name" id="name" placeholder="Name"><br>
-				<input type="text" name="email" id="email" placeholder="Email address"><br>
-				<textarea name="comments" id="comments" placeholder="Comments and feedback"></textarea>
-				<p><a href="Submit">Submit</a></p>
-			</formfield>
+			<label for="name">Name:</label>
+			<input type="text" name="name" id="name" placeholder="Name"><br>
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" placeholder="Email address"><br>
+			<label for="comments">Comments</label>
+			<textarea name="comments" id="comments" placeholder="Comments and feedback"></textarea>
+			<p><a href="Submit">Submit</a></p>
 		</form>
 	</div>
 	<div class="col-sm-12 col-md-6">
-		<nav>
-			<ul>
-				<li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-				<li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-			</ul>
-		</nav>
+		<ul>
+			<li><a href="https://www.facebook.com" target="_blank"><span>Facebook</span></a></li>
+			<li><a href="https://www.instagram.com" target="_blank"><span>Instagram</span></a></li>
+		</ul>
 			<address>
 				<p>5B Whaanga Rd, Raglan 3297, New Zealand</p>
+				<p><a href="tel:+6478257873">+647.825.7873</a></p>
 			</address>
-		<p><a href="tel:+6478257873">+647.825.7873</a></p>
 		<div class="mapouter"><div class="gmap_canvas"><iframe width="425" height="205" id="gmap_canvas" src="https://maps.google.com/maps?q=5B%20Whaanga%20Rd%2C%20Raglan%203297%2C%20New%20Zealand&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com">computer gif</a></div><style>.mapouter{position:relative;text-align:right;height:205px;width:425px;}.gmap_canvas {overflow:hidden;background:none!important;height:205px;width:425px;}</style></div>
 	</div>
 </section>
