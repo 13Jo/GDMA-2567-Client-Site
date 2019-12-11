@@ -42,6 +42,10 @@
 3.0 - GENERIC 
 -------------------------------------------------------------- */
 
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
 html {
 	font-size: 0.75rem;
 }
@@ -70,6 +74,10 @@ html {
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
 	background-size: cover;
+}
+
+#featured-in, #monthly-newsletter {
+	background-color: #fb9553;
 }
 
 @media only screen and (min-width: 768px) {
@@ -102,6 +110,170 @@ html {
 	}
 }
 
+#map {
+	width: 425px;
+	height: 205px;
+}
+
+/*--- TYPOGRAPHY ---*/
+
+.main-nav li a, h2, .tab button, #services h3, #services a, #equipment header p, #featured-in a, #monthly-newsletter a, #contact-us form a {
+	text-transform: uppercase;
+}
+
+.tab button span {
+	text-transform: capitalize;
+}
+
+.main-nav, #home div.col-sm-12, footer {
+	text-align: center;
+}
+
+h2, .tab button.active, #services h3, .package-price, #featured-in a:hover, #monthly-newsletter a:hover, #contact-us form a:hover {
+	color: #d93f3d;
+}
+
+.tab, .tab button.active span, .tab button:hover, #services a:hover {
+	color: #fb9553;
+}
+
+h2, .tab button, #services h3, .package-price {
+	font-weight: 800;
+}
+
+#services a, #featured-in a, #monthly-newsletter a, #contact-us form a {
+	font-weight: 600;
+}
+
+.tab button span, #services h3 span, #featured-in h2, #monthly-newsletter h2 {
+	font-weight: 400;
+}
+
+#services h3 span, #equipment header p, #featured-in h2, #monthly-newsletter h2 {
+	letter-spacing: 0.3em;
+}
+
+#services h3 span, #featured-in h2, #monthly-newsletter h2 {
+	font-size: 1.25rem;
+}
+
+#featured-in span {
+	font-size: 1.15rem;
+	line-height: 0;
+}
+
+/*--- Headings ---*/
+
+h2, #services h3 {
+	font-size: 4.5rem;
+}
+
+#services h3 span {
+	line-height: -1em; /* line-height not having effect */
+}
+
+#equipment h2 {
+	margin-bottom: 1.5rem;
+}
+
+#equipment header p {
+	margin-bottom: 5rem;
+}
+
+/*--- Paragraphs ---*/
+
+p {
+	font-size: 1.4rem;
+	line-height: 1.5em;
+	margin-top: 0;
+}
+
+.package-price {
+	font-size: 3rem; /* gets over-written by p, why? */
+	margin-top: 5.75rem;
+}
+
+#home div.wrapper p {
+	font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 768px) {
+	
+	#home div.col-sm-12 {
+		text-align: left;
+	}
+	
+	p {
+		font-size: 1rem;
+		line-height: 1.6em;
+	}
+	
+	#home div.wrapper p {
+		font-size: 1.3rem;
+	}
+	
+	h2, #services h3 {
+		font-size: 6rem;
+	}
+	
+	.package-price {
+		font-size: 3rem; /* gets over-written by p, why? */
+		margin-top: 8.6rem;
+	}
+	
+	#equipment h2 {
+		margin-bottom: 1.25rem;
+	}
+
+	#equipment header p {
+		font-size: 1.25rem;
+	}
+	
+	#featured-in p {
+		font-size: 1.25rem;
+	}
+	
+	#featured-in span {
+		font-size: 1rem;
+		line-height: 0;
+	}
+	
+}
+
+@media only screen and (min-width: 1024px) {
+	
+	p {
+		font-size: 0.9rem;
+		line-height: 1.75em;
+	}
+	
+	#home div.wrapper p {
+		font-size: 1.25rem;
+	}
+	
+	h2, #services h3 {
+		font-size: 7.5rem;
+	}
+	
+	.package-price {
+		font-size: 3rem; /* gets over-written by p, why? */
+		margin-top: 11.1rem;
+	}
+	
+	#equipment header p {
+		font-size: 1.75rem;
+	}
+	
+	#featured-in h2, #monthly-newsletter h2 {
+		font-size: 1.5rem;
+	}
+	
+}
+
+/*--- Anchors ---*/
+
+
+
 /*--------------------------------------------------------------
 5.0 - OBJECTS
 -------------------------------------------------------------- */
@@ -109,7 +281,8 @@ html {
 /*--- Framework ---*/
 
 #home {
-	padding-top: 10em;
+	padding-top: 12em;
+	padding-bottom: 3em;
 }
 
 #services {
@@ -118,7 +291,7 @@ html {
 }
 
 #services div.col-sm-7 {
-	margin-top: 6.5em;
+	margin-top: 4em;
 }
 
 #services header.row {
@@ -129,23 +302,24 @@ html {
 
 #services-h2 {
 	position: absolute;
-	top: -2.25em;
-	left: 12em;
+	top: -6.4em;
+	left: 8em;
 }
 
 #voucher-widget {
 	margin-left: 13.8em;
-	margin-bottom: 7.5em;
+	margin-bottom: 3.5em;
 }
 
 @media only screen and (min-width: 768px) {
 	
 	#home {
-		padding-top: 19.75em;
+		padding-top: 6em;
+		padding-bottom: 20em;
 	}
 	
 	#home div.col-sm-12.col-lg-6 {
-		margin-top: 11.75em;
+		margin-top: 5em;
 	}
 	
 	#services {
@@ -158,13 +332,14 @@ html {
 	}
 	
 	#services-h2 {
-		top: -2.25em;
-		left: 15em;
+		top: -8.5em;
+		left: 13em;
 	}
 	
 	#voucher-widget {
+	margin-top: 3em;
 	margin-left: 23.25em;
-	margin-bottom: 7.5em;
+	margin-bottom: 3em;
 	}
 	
 }
@@ -172,12 +347,13 @@ html {
 @media only screen and (min-width: 1024px) {
 	
 	#home {
-		padding-top: 18.65em;
-		padding-bottom: 5em;
+		padding-top: 5em;
+		padding-bottom: 19em;
 	}
 	
 	#home div.col-sm-12.col-lg-6 {
-		margin-top: 12.5em;
+		margin-top: 5.5em;
+		margin-left: 2em;
 	}
 	
 	#services {
@@ -190,14 +366,95 @@ html {
 	}
 	
 	#services-h2 {
-		top: -2.25em;
-		left: 22em;
+		top: -10.6em;
+		left: 15em;
 	}
+	
+	#voucher-widget {
+	margin-top: 2em;
+	margin-left: 31.25em;
+	margin-bottom: 3em;
+	}
+	
 }
 
 /*--------------------------------------------------------------
 6.0 - COMPONENTS 
 -------------------------------------------------------------- */
+
+#services a, #featured-in a, #monthly-newsletter a, #contact-us form a {
+	text-decoration: none;
+	background-color: #d93f3d; /* needs gradient fill */
+}
+
+#services a, #contact-us form a {
+	border: solid 0.075em #d93f3d;
+}
+
+/*--- Buttons ---*/
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+	border: none;
+	color: #727375;
+	cursor: pointer;
+	font-size: 1.49rem;
+	outline: none;
+	padding: 14px 16px;
+	transition: 0.3s;
+	background-color: rgba(255,255,255,0.00);
+}
+
+.tab button span {
+	font-size: 1.1rem;
+	line-height: -1em; /* Negative values for line-height doesn't have any effect */
+}
+
+#services a, #contact-us form a {
+	text-size: 0.3rem; /* no effect? */
+	padding: 0.75em 2em;
+}
+
+#services a:hover {
+	border: solid 0.075em #fb9553;
+}
+
+#featured-in a, #monthly-newsletter a {
+	padding: 0.75em 1.4em;
+}
+
+#featured-in a:hover, #monthly-newsletter a:hover, #contact-us form a:hover {
+	background-color: #fff;
+	border: solid 0.075em #d93f3d;
+}
+
+@media only screen and (max-width: 768px) {
+	
+	.tab span.hide-span {
+		display: none;
+	}
+	
+}
+
+@media only screen and (min-width: 768px) {
+	
+	.tab button {
+		font-size: 2rem;
+	}
+	
+	.tab button span {
+		font-size: 1rem;
+	}
+	
+}
+
+@media only screen and (min-width: 1024px) {
+	
+	.tab button {
+		font-size: 2.25rem;
+	}
+	
+}
 
 /*--- Header ---*/
 
@@ -209,13 +466,20 @@ html {
 	background-size: cover;
 }
 
+/*--- Footer ---*/
+
+footer {
+	margin-left: 0;
+	padding: 5em;
+}
+
 /*--- Navigation ---*/
 
 
 /*--- /// Start of Hamburger Menu \\\ ---*/
 
 .main-nav {
-	background-color: rgba(255,255,255,.90);
+	background-color: rgba(56,60,72,.90);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -232,14 +496,17 @@ html {
 }
 
 .main-nav li a {
+  color: #fb9553;
   display: block;
-  padding: 20px 20px;
+  padding: 1.4rem 1rem;
   text-decoration: none;
+	font-size: 1.3rem;
 }
 
 .main-nav li a:hover,
 .main-nav .menu-btn:hover {
-  background-color: #f4f4f4;
+  color: #fff;
+  background-color: #d93f3d;
 }
 
 /* menu */
@@ -262,7 +529,7 @@ html {
 }
 
 .main-nav .menu-icon .navicon {
-  background: #333;
+  background: #fff;
   display: block;
   height: 2px;
   position: relative;
@@ -272,7 +539,7 @@ html {
 
 .main-nav .menu-icon .navicon:before,
 .main-nav .menu-icon .navicon:after {
-  background: #333;
+  background: #fff;
   content: '';
   display: block;
   height: 100%;
@@ -318,23 +585,33 @@ html {
 
 /* 48em = 768px */
 
-@media (min-width: 48em) {
+@media only screen and (min-width: 768px) {
   .main-nav li {
-    /*float: left;*/
 	  display: inline-block;
   }
+	
   .main-nav li a {
-    padding: 20px 30px;
+    font-size: 1.1rem;
+    padding: 1.4rem 1rem;
   }
+	
   .main-nav .menu {
 	text-align: center;
     clear: none;
-    /*float: right;*/
     max-height: none;
   }
+	
   .main-nav .menu-icon {
     display: none;
   }
+
+}
+
+@media only screen and (min-width: 1024px) {
+	.main-nav li a {
+ 		font-size: 1rem;
+		padding: 1.4rem 1.5rem;
+	}
 }
 
 /*--- ||| End of Hamburger Menu ||| ---*/
@@ -349,25 +626,6 @@ html {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-}
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-	border: none;
-	outline: none;
-	cursor: pointer;
-	padding: 14px 16px;
-	transition: 0.3s;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
 }
 
 /* Style the tab content */
@@ -395,79 +653,70 @@ html {
 
 /*---- NUMBER OF SLIDE CONFIGURATION ----*/
  
-/*--.wrapper {
-	 max-width: 60em;
-	 margin: 1em auto;
-	 position: relative;
-}--*/
 
-#slider {
-	position: relative;
+.slideshow-container {
+    position: relative;
+    margin: auto
 }
 
-.slider-input {
-	 display: none;
+.mySlides {
+	display: none;
+	height: 600px;    
+	background-size: cover;
 }
 
-.inner {
-	 width: 500%;
-	 line-height: 0;
+.mySlides:first-child {
+    background: url("../img/es_gallery_01.jpg") -350px -50px no-repeat;
 }
 
-article {
-	 width: 20%;
-	 float: left;
-	 position: relative;
+.mySlides:nth-child(2) {
+    background: url("../img/es_gallery_02.jpg") center no-repeat;
 }
 
-article img {
-	 width: 100%;
+.mySlides:last-child {
+    background: url("../img/es_gallery_03.jpg") center no-repeat;
 }
 
-/*---- SET UP CONTROL ----*/
 
-.slider-prev-next-control {
-	 height: 50px;
-	 position: absolute;
-	 top: 50%;
-	 width: 100%;
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #222428;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0
 }
 
-.slider-prev-next-control label {
-	 display: none;
-	 width: 40px;
-	 height: 40px;
-	 border-radius: 50%;
-	 background: #fff;
-	 opacity: 0.7;
+.next {
+    right: 0;
+    border-radius: 3px 3px 3px 3px
 }
 
-.slider-prev-next-control label:hover {
-	 opacity: 1;
+.prev {
+    left: 0;
+    border-radius: 3px 3px 3px 3px
 }
 
-/*--
-.slider-dot-control {
-	 position: absolute;
-	 width: 100%;
-	 bottom: 0;
-	 text-align: center;
+.prev:hover,
+.next:hover {
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.8)
 }
 
-.slider-dot-control label {
-	 cursor: pointer;
-	 border-radius: 5px;
-	 display: inline-block;
-	 width: 10px;
-	 height: 10px;
-	 background: #bbb;
+
+
+.dot {
+   display: none;
 }
 
-.slider-dot-control label:hover {
-	 background: #ccc;
-	 border-color: #777;
-}
---*/
+
 
 /* Info Box */
 
@@ -480,49 +729,11 @@ article img {
 	 text-align: left;
 }
 
-/*--
-.info h3 {
-	 color: #fcfff4;
-	 margin: 0 0 5px;
-	 font-weight: normal;
-	 font-size: 1.5em;
-	 font-style: normal;
-}
---*/
-
-/*--
-.info.top-left {
-	background-color: red;
-	 top: 30px;
-	 left: 30px;
-}
-
-.info.top-right {
-	background-color: red;
-	 top: 30px;
-	 right: 30px;
-}
-
-.info.bottom-left {
-	background-color: red;
-	 bottom: 30px;
-	 left: 30px;
-}
-
-.info.bottom-right {
-	background-color: red;
-	 bottom: 30px;
-	 right: 30px;
-}
---*/
-
 /* Slider Styling */
 
 .slider-wrapper {
 	 width: 100%;
 	 overflow: hidden;
-	/*-- border-radius: 5px; --*/
-	/*-- box-shadow: 1px 1px 4px #666; --*/
 	 background: #fff;
 	 background: #fcfff4;
 }
@@ -632,18 +843,13 @@ article img {
 
 /*--- Alignment ---*/
 
-.main-nav, #home div.col-sm-12 {
-	text-align: center;
-}
-
-@media only screen and (min-width: 768px) {
-	#home div.col-sm-12 {
-		text-align: left;
-	}
-}
 
 /*--- Color ---*/
 
-.bg-blue {
+.bg-blue, #services a:hover, footer {
 	background-color: #383c48;
+}
+
+.txt-white, h3 span, #services a, #featured-in h2, #featured-in a, #featured-in span, #monthly-newsletter h2, #monthly-newsletter a, #contact-us form a {
+	color: #fff;
 }
