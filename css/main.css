@@ -66,36 +66,6 @@ html {
 4.0 - ELEMENTS
 -------------------------------------------------------------- */
 
-#services-photo {
-	width: 13.8em;
-	height: 37.5em;
-	background: url("../img/services.jpg") no-repeat center center;
-	-o-background-size: cover;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
-
-#featured-in, #monthly-newsletter {
-	background-color: #fb9553;
-}
-
-@media only screen and (min-width: 768px) {
-	#services-photo {
-		margin-left: 3.75em;
-		width: 14.25em;
-		height: 26em;
-	}
-}
-
-@media only screen and (min-width: 1024px) {
-	#services-photo {
-		margin-left: 5.5em;
-		width: 19em;
-		height: 24.6em;
-	}
-}
-
 /*--- LISTS ---*/
 
 /*--- MEDIA ---*/
@@ -117,7 +87,7 @@ html {
 
 /*--- TYPOGRAPHY ---*/
 
-.main-nav li a, h2, .tab button, #services h3, #services a, #equipment header p, #featured-in a, #monthly-newsletter a, #contact-us form a {
+.main-nav li a, h2, .tab button, #services02 h3, #services a, #equipment header p, #featured-in a, #monthly-newsletter a, #contact-us form a {
 	text-transform: uppercase;
 }
 
@@ -125,11 +95,11 @@ html {
 	text-transform: capitalize;
 }
 
-.main-nav, #home div.col-sm-12, footer {
+.main-nav, #home div.col-sm-12 {
 	text-align: center;
 }
 
-h2, .tab button.active, #services h3, .package-price, #featured-in a:hover, #monthly-newsletter a:hover, #contact-us form a:hover {
+h2, .tab button.active, #services02 h3, .package-price, #featured-in a:hover, #monthly-newsletter a:hover, #contact-us form a:hover {
 	color: #d93f3d;
 }
 
@@ -137,7 +107,7 @@ h2, .tab button.active, #services h3, .package-price, #featured-in a:hover, #mon
 	color: #fb9553;
 }
 
-h2, .tab button, #services h3, .package-price {
+h2, .tab button, #services02 h3, .package-price {
 	font-weight: 800;
 }
 
@@ -145,15 +115,15 @@ h2, .tab button, #services h3, .package-price {
 	font-weight: 600;
 }
 
-.tab button span, #services h3 span, #featured-in h2, #monthly-newsletter h2 {
+.tab button span, #services02 h3 span, #featured-in h2, #monthly-newsletter h2 {
 	font-weight: 400;
 }
 
-#services h3 span, #equipment header p, #featured-in h2, #monthly-newsletter h2 {
+#services02 h3 span, #equipment header p, #featured-in h2, #monthly-newsletter h2 {
 	letter-spacing: 0.3em;
 }
 
-#services h3 span, #featured-in h2, #monthly-newsletter h2 {
+#services02 h3 span, #featured-in h2, #monthly-newsletter h2 {
 	font-size: 1.25rem;
 }
 
@@ -164,12 +134,22 @@ h2, .tab button, #services h3, .package-price {
 
 /*--- Headings ---*/
 
-h2, #services h3 {
+h2, #services02 h3 {
 	font-size: 4.5rem;
 }
 
-#services h3 span {
-	line-height: -1em; /* line-height not having effect */
+#services-h2 {
+	position: relative;
+	top: -4.5em;
+	left: -7.5em;
+}
+
+#services-h2 h2 {
+	margin: 0;
+}
+
+#services02 h3 {
+	line-height: 0em;
 }
 
 #equipment h2 {
@@ -178,6 +158,18 @@ h2, #services h3 {
 
 #equipment header p {
 	margin-bottom: 5rem;
+}
+
+@media only screen and (min-width: 768px) {
+	#services-h2 {
+		left: -10.5em;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	#services-h2 {
+		left: -15.75em;
+	}
 }
 
 /*--- Paragraphs ---*/
@@ -212,7 +204,7 @@ p {
 		font-size: 1.3rem;
 	}
 	
-	h2, #services h3 {
+	h2, #services02 h3 {
 		font-size: 6rem;
 	}
 	
@@ -251,7 +243,7 @@ p {
 		font-size: 1.25rem;
 	}
 	
-	h2, #services h3 {
+	h2, #services02 h3 {
 		font-size: 7.5rem;
 	}
 	
@@ -280,35 +272,15 @@ p {
 
 /*--- Framework ---*/
 
+
+
+/*--------------------------------------------------------------
+6.0 - COMPONENTS 
+-------------------------------------------------------------- */
+
 #home {
 	padding-top: 12em;
 	padding-bottom: 3em;
-}
-
-#services {
-	padding-top: 6.6em;
-	position: relative;
-}
-
-#services div.col-sm-7 {
-	margin-top: 4em;
-}
-
-#services header.row {
-	position: relative;
-	top: 0;
-	left: 0;
-}
-
-#services-h2 {
-	position: absolute;
-	top: -6.4em;
-	left: 8em;
-}
-
-#voucher-widget {
-	margin-left: 13.8em;
-	margin-bottom: 3.5em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -320,26 +292,6 @@ p {
 	
 	#home div.col-sm-12.col-lg-6 {
 		margin-top: 5em;
-	}
-	
-	#services {
-		padding-top: 7.5em;
-	}
-	
-	#services div.col-sm-7 {
-		margin-top: 6.5em;
-		margin-left: 5.25em;
-	}
-	
-	#services-h2 {
-		top: -8.5em;
-		left: 13em;
-	}
-	
-	#voucher-widget {
-	margin-top: 3em;
-	margin-left: 23.25em;
-	margin-bottom: 3em;
 	}
 	
 }
@@ -356,31 +308,8 @@ p {
 		margin-left: 2em;
 	}
 	
-	#services {
-		padding-top: 8.45em;
-	}
-	
-	#services div.col-sm-7 {
-		margin-top: 6.5em;
-		margin-left: 6.7em;
-	}
-	
-	#services-h2 {
-		top: -10.6em;
-		left: 15em;
-	}
-	
-	#voucher-widget {
-	margin-top: 2em;
-	margin-left: 31.25em;
-	margin-bottom: 3em;
-	}
-	
 }
 
-/*--------------------------------------------------------------
-6.0 - COMPONENTS 
--------------------------------------------------------------- */
 
 #services a, #featured-in a, #monthly-newsletter a, #contact-us form a {
 	text-decoration: none;
@@ -389,6 +318,18 @@ p {
 
 #services a, #contact-us form a {
 	border: solid 0.075em #d93f3d;
+}
+
+#services {
+	padding-top: 8em;
+}
+
+:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+#featured-in, #monthly-newsletter {
+	background-color: #fb9553;
 }
 
 /*--- Buttons ---*/
@@ -407,11 +348,10 @@ p {
 
 .tab button span {
 	font-size: 1.1rem;
-	line-height: -1em; /* Negative values for line-height doesn't have any effect */
+	line-height: 0em;
 }
 
 #services a, #contact-us form a {
-	text-size: 0.3rem; /* no effect? */
 	padding: 0.75em 2em;
 }
 
@@ -462,6 +402,7 @@ p {
 	background: url("../img/hero.jpg") no-repeat center center;
 	-o-background-size: cover;
 	-moz-background-size: cover;
+	-ms-background-size: cover;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -666,7 +607,7 @@ footer {
 }
 
 .mySlides:first-child {
-    background: url("../img/es_gallery_01.jpg") -350px -50px no-repeat;
+    background: url("../img/es_gallery_01.jpg") center no-repeat;
 }
 
 .mySlides:nth-child(2) {
@@ -679,8 +620,7 @@ footer {
 
 
 
-.prev,
-.next {
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
